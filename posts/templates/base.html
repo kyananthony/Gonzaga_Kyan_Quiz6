@@ -2,9 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>HomePage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .navbar {
+            background-color: #333;
+            width: 100%;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+        }
+        h1 {
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
+
+<div class="navbar">
+    <a href="/login/">Login</a>
+    <a href="/register/">Register</a>
+</div>
+
+<h1>Welcome to Our Website</h1>
+<p></p>
 
 </body>
 </html>

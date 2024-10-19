@@ -19,7 +19,7 @@ def login_view(request):
         form = CustomLoginForm(request, data=request.POST)
         if form.is_valid():
             login(request, form.get_user())
-            return redirect('home')  # Redirect to a success page
+            return redirect('home')
     else:
         form = CustomLoginForm()
     return render(request, 'registration/login.html', {'form': form})
